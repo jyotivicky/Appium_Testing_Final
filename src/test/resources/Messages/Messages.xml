@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+<!-- Error Text -->
+<string name="err_invalid_username_or_password">Username and password do not match any user in this service.</string>
+<string name="page_title">PRODUCTS</string>
+<!-- Products Page SLB product details -->
+<string name="products_page_Bag_title">Sauce Labs Backpack</string>
+<string name="products_page_Bag_title_status">Bag title showing correct</string>
+
+<string name="products_page_Bag_price">$29.99</string>
+<string name="products_page_Bag_price_status">Bag price showing correct</string>
+
+<!-- Product Details Page SLB product details -->
+<string name="products_page_Bag_title">Sauce Labs Backpack</string>
+<string name="products_details_page_Bag_title_status_msg">Bag title showing correct on Products details page</string>
+
+<string name="product_details_page_Bag_description">carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</string>
+<string name="product_details_page_Bag_description_status_msg">Products description showing correct in Products description page</string>
+
+<string name="product_details_page_Bag_price">$29.99</string>
+<string name="product_details_page_Bag_price_status_msg">Products price showing correct on Products description page</string>
+
+<string name="invalid_credential_status_msg">User not able to login with invalid username and password</string>
+<string name="Valid_credential_status_msg">User able to login with valid username and password sucessfully</string>
+
+<string name="after_added">REMOVE</string>
+<string name="product_added_sucessfully">Product Added Sucessfully</string>
+
+<string name="your_cart">YOUR CART</string>
+<string name="product_showing_in_cart_page">Added product is showing in Cart Page Correctly</string>
+
+<string name="information_page_title">CHECKOUT: INFORMATION</string>
+<string name="product_showing_in_info_page">Added product is showing in Checkout Information Page Correctly</string>
+
+<string name="overview_page_title">CHECKOUT: OVERVIEW</string>
+<string name="product_showing_in_overview_page">Added product is showing in Overview Page Correctly</string>
+
+<string name="checkout_complete_page_title">CHECKOUT: COMPLETE!</string>
+<string name="product_showing_in_checkout_complete_page">User able to order a product sucessfully</string>
+
+<string name="thank_you_msg">THANK YOU FOR YOU ORDER</string>
+<string name="product_ordered_sucessfully">User able to order a product sucessfully</string>
+
+</resources>

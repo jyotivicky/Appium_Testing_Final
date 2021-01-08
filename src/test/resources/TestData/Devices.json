@@ -1,0 +1,12 @@
+{
+  "1": {
+    "device": "Google Pixel 3",
+    "os_version": "10.0",
+    "app_url": "bs://c68d1aa4b8debc31d022649775a5524cb9be34e0"
+  },
+  "2": {
+    "device": "iPhone Mobile",
+    "os_version": "100",
+    "app_url": "Pass the Ios app path url"
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="platformVersion" value="9.0"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="deviceName" value="Google Pixel 2"/>
+  <listeners>
+    <listener class-name="com.Listener.TestListner"/>
+  </listeners>
+  <test name="Mobile Automation Test on Pixel 2">
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="Google Pixel 2"/>
+    <classes>
+      <class name="com.TestCases.LoginTest"/>
+      <class name="com.TestCases.ProductInformationTest"/>
+      <class name="com.TestCases.ProductCheckOutTest"/>
+    </classes>
+  </test> <!-- Mobile Automation Test on Pixel 2 -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="false">
+
+	<test name="Mobile Automation Test on Pixel 2">
+		<listeners>
+			<listener class-name="com.Listener.TestListner" />
+		</listeners>
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="9.0" />
+		<parameter name="deviceName" value="Google Pixel 2" />
+		<classes>
+		    <class name="com.TestCases.LoginTest" />
+			<class name="com.TestCases.ProductInformationTest" />
+			<class name="com.TestCases.ProductCheckOutTest" />
+		</classes>
+	</test>
+
+<!-- 	<test name="Mobile Automation Test on Pixel 3">
+		<listeners>
+			<listener class-name="com.Listener.TestListner" />
+		</listeners>
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="9.0" />
+		<parameter name="deviceName" value="Google Pixel 3" />
+		<classes>
+			<class name="com.TestCases.LoginTest" />
+			<class name="com.TestCases.ProductCheckOutTest" />
+			<class name="com.TestCases.ProductInformationTest" />
+		</classes>
+	</test> -->
+
+</suite>
