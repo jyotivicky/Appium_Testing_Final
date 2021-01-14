@@ -32,13 +32,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 	protected static ThreadLocal<HashMap<String, String>> hs = new ThreadLocal<HashMap<String, String>>();
 	protected static ThreadLocal<Properties> props = new ThreadLocal<Properties>();
 	protected static ThreadLocal<String> dateTime = new ThreadLocal<String>();
-	protected static ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
+	protected static ThreadLocal<AppiumDriver> driver = new ThreadLocal<AppiumDriver>();
 	protected static ThreadLocal<String> platform = new ThreadLocal<String>();
 	protected static ThreadLocal<String> deviceName = new ThreadLocal<String>();
 	protected static TestUtility utility = new TestUtility();
 	
-	public static final String USERNAME = "jyotiprakashdas1";
-	public static final String AUTOMATE_KEY = "n36F6QgFLpRxTmm8hxpy";
+	public static final String USERNAME = "vicky282";
+	public static final String AUTOMATE_KEY = "rmx3pMxzQxHcgZgRexxS";
 	public static final String BrowserStackURL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	public static JSONObject testValues;
 
@@ -94,7 +94,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 		PageFactory.initElements(new AppiumFieldDecorator(getTheDriver()), this);
 	}
 	
-
 	@BeforeClass
 	public void beforeClass() throws IOException {
 		closeApp();
@@ -156,6 +155,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 			cap.setCapability("name", "New Appium Testing");
 			cap.setCapability("build", "New Testing");
 			
+			cap.setCapability("platformName", platformName);
+			cap.setCapability("device", deviceName);
+			cap.setCapability("os_version", platformVersion);
+			cap.setCapability("app", "bs://5af3f1f3594652dd7739482fd198944cde88d642");
+			
 			URL LocalBrowserStackURL = new URL(BrowserStackURL);
 
 		    String userName = System.getenv("BROWSERSTACK_USERNAME");
@@ -167,19 +171,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 			switch (deviceName) {
 			case "Google Pixel 2":
 				cap.setCapability("automationName", props.getProperty("Android Automation On Pixel_2"));
-				cap.setCapability("platformName", platformName);
-				cap.setCapability("device", deviceName);
-				cap.setCapability("os_version", platformVersion);
-				cap.setCapability("app", "bs://585898bcd27d018562377bd7b216e5b8f05f1d5d");
 				driver = new AndroidDriver(LocalBrowserStackURL, cap);
 				break;
 				
 			case "Google Pixel 3":
 				cap.setCapability("automationName", props.getProperty("Android Automation On Pixel_3"));
-				cap.setCapability("platformName", platformName);
-				cap.setCapability("device", deviceName);
-				cap.setCapability("os_version", platformVersion);
-				cap.setCapability("app", "bs://585898bcd27d018562377bd7b216e5b8f05f1d5d");
 				driver = new AndroidDriver(LocalBrowserStackURL, cap);
 				break;
 				

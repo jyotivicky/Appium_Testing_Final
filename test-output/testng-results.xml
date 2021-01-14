@@ -1,26 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="347108" started-at="2021-01-08T08:52:29Z" finished-at="2021-01-08T08:58:17Z">
+  <suite name="Suite" duration-ms="134941" started-at="2021-01-14T03:24:06Z" finished-at="2021-01-14T03:26:21Z">
     <groups>
-      <group name="regression">
-        <method signature="ProductCheckOutTest.validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateAddToCart" class="com.TestCases.ProductCheckOutTest"/>
-        <method signature="ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateProductOnCartPage" class="com.TestCases.ProductCheckOutTest"/>
-        <method signature="ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateProductOnInformationPage" class="com.TestCases.ProductCheckOutTest"/>
-        <method signature="ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateProductOnOverviewPage" class="com.TestCases.ProductCheckOutTest"/>
-        <method signature="ProductInformationTest.validateProductsOnProductDetailsPage()[pri:2, instance:com.TestCases.ProductInformationTest@6ec8211c]" name="validateProductsOnProductDetailsPage" class="com.TestCases.ProductInformationTest"/>
-        <method signature="ProductInformationTest.validateProductsOnProductPage()[pri:1, instance:com.TestCases.ProductInformationTest@6ec8211c]" name="validateProductsOnProductPage" class="com.TestCases.ProductInformationTest"/>
-      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="LoginTest.invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@25bbf683]" name="invalidPasswordTest" class="com.TestCases.LoginTest"/>
-        <method signature="LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@25bbf683]" name="invalidUsernameTest" class="com.TestCases.LoginTest"/>
-        <method signature="LoginTest.validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@25bbf683]" name="validUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@782663d3]" name="invalidPasswordTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@782663d3]" name="invalidUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@782663d3]" name="validUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@481a15ff]" name="invalidPasswordTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@481a15ff]" name="invalidUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@481a15ff]" name="validUsernameTest" class="com.TestCases.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Mobile Automation Test on Pixel 2" duration-ms="347108" started-at="2021-01-08T08:52:29Z" finished-at="2021-01-08T08:58:17Z">
+    <test name="Mobile Automation Test on Pixel 3" duration-ms="128098" started-at="2021-01-14T03:24:06Z" finished-at="2021-01-14T03:26:14Z">
       <class name="com.TestCases.LoginTest">
-        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="DriverInitializataion" is-config="true" duration-ms="31579" started-at="2021-01-08T14:22:29Z" finished-at="2021-01-08T14:23:01Z">
+        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.LoginTest@481a15ff]" name="DriverInitializataion" is-config="true" duration-ms="33141" started-at="2021-01-14T08:54:06Z" finished-at="2021-01-14T08:54:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Google Pixel 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitializataion -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.LoginTest@481a15ff]" name="beforeClass" is-config="true" duration-ms="5271" started-at="2021-01-14T08:54:39Z" finished-at="2021-01-14T08:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@481a15ff]" name="invalidUsernameTest" duration-ms="37792" started-at="2021-01-14T08:54:44Z" finished-at="2021-01-14T08:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method status="PASS" signature="invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@481a15ff]" name="invalidPasswordTest" duration-ms="34183" started-at="2021-01-14T08:55:22Z" finished-at="2021-01-14T08:55:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method status="PASS" signature="validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@481a15ff]" name="validUsernameTest" duration-ms="17302" started-at="2021-01-14T08:55:56Z" finished-at="2021-01-14T08:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUsernameTest -->
+        <test-method status="PASS" signature="QuitTheDriver()[pri:0, instance:com.TestCases.LoginTest@481a15ff]" name="QuitTheDriver" is-config="true" duration-ms="393" started-at="2021-01-14T08:56:14Z" finished-at="2021-01-14T08:56:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitTheDriver -->
+      </class> <!-- com.TestCases.LoginTest -->
+    </test> <!-- Mobile Automation Test on Pixel 3 -->
+    <test name="Mobile Automation Test on Pixel 2" duration-ms="134941" started-at="2021-01-14T03:24:06Z" finished-at="2021-01-14T03:26:21Z">
+      <class name="com.TestCases.LoginTest">
+        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.LoginTest@782663d3]" name="DriverInitializataion" is-config="true" duration-ms="36370" started-at="2021-01-14T08:54:06Z" finished-at="2021-01-14T08:54:42Z">
           <params>
             <param index="0">
               <value>
@@ -41,67 +81,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverInitializataion -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="beforeClass" is-config="true" duration-ms="2062" started-at="2021-01-08T14:23:01Z" finished-at="2021-01-08T14:23:03Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.LoginTest@782663d3]" name="beforeClass" is-config="true" duration-ms="2207" started-at="2021-01-14T08:54:42Z" finished-at="2021-01-14T08:54:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@25bbf683]" name="invalidUsernameTest" duration-ms="29802" started-at="2021-01-08T14:23:03Z" finished-at="2021-01-08T14:23:33Z">
+        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@782663d3]" name="invalidUsernameTest" duration-ms="42598" started-at="2021-01-14T08:54:44Z" finished-at="2021-01-14T08:55:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUsernameTest -->
-        <test-method status="PASS" signature="invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@25bbf683]" name="invalidPasswordTest" duration-ms="30972" started-at="2021-01-08T14:23:33Z" finished-at="2021-01-08T14:24:04Z">
+        <test-method status="PASS" signature="invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@782663d3]" name="invalidPasswordTest" duration-ms="35573" started-at="2021-01-14T08:55:27Z" finished-at="2021-01-14T08:56:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPasswordTest -->
-        <test-method status="PASS" signature="validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@25bbf683]" name="validUsernameTest" duration-ms="31247" started-at="2021-01-08T14:24:04Z" finished-at="2021-01-08T14:24:35Z">
+        <test-method status="PASS" signature="validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@782663d3]" name="validUsernameTest" duration-ms="17762" started-at="2021-01-14T08:56:03Z" finished-at="2021-01-14T08:56:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUsernameTest -->
-        <test-method status="PASS" signature="QuitTheDriver()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="QuitTheDriver" is-config="true" duration-ms="951" started-at="2021-01-08T14:28:16Z" finished-at="2021-01-08T14:28:17Z">
+        <test-method status="PASS" signature="QuitTheDriver()[pri:0, instance:com.TestCases.LoginTest@782663d3]" name="QuitTheDriver" is-config="true" duration-ms="429" started-at="2021-01-14T08:56:20Z" finished-at="2021-01-14T08:56:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitTheDriver -->
       </class> <!-- com.TestCases.LoginTest -->
-      <class name="com.TestCases.ProductInformationTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.ProductInformationTest@6ec8211c]" name="beforeClass" is-config="true" duration-ms="2070" started-at="2021-01-08T14:24:35Z" finished-at="2021-01-08T14:24:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="validateProductsOnProductPage()[pri:1, instance:com.TestCases.ProductInformationTest@6ec8211c]" name="validateProductsOnProductPage" duration-ms="46910" started-at="2021-01-08T14:24:37Z" finished-at="2021-01-08T14:25:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductsOnProductPage -->
-        <test-method status="PASS" signature="validateProductsOnProductDetailsPage()[pri:2, instance:com.TestCases.ProductInformationTest@6ec8211c]" name="validateProductsOnProductDetailsPage" duration-ms="66516" started-at="2021-01-08T14:25:24Z" finished-at="2021-01-08T14:26:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductsOnProductDetailsPage -->
-      </class> <!-- com.TestCases.ProductInformationTest -->
-      <class name="com.TestCases.ProductCheckOutTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="beforeClass" is-config="true" duration-ms="2112" started-at="2021-01-08T14:26:31Z" finished-at="2021-01-08T14:26:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateAddToCart" duration-ms="39597" started-at="2021-01-08T14:26:33Z" finished-at="2021-01-08T14:27:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAddToCart -->
-        <test-method status="PASS" signature="validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateProductOnCartPage" duration-ms="11253" started-at="2021-01-08T14:27:12Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateAddToCart" finished-at="2021-01-08T14:27:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductOnCartPage -->
-        <test-method status="PASS" signature="validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateProductOnInformationPage" duration-ms="27871" started-at="2021-01-08T14:27:24Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnCartPage" finished-at="2021-01-08T14:27:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductOnInformationPage -->
-        <test-method status="PASS" signature="validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateProductOnOverviewPage" duration-ms="13631" started-at="2021-01-08T14:27:51Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnInformationPage" finished-at="2021-01-08T14:28:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductOnOverviewPage -->
-        <test-method status="PASS" signature="validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@7276c8cd]" name="validateProductOrderSucess" duration-ms="10479" started-at="2021-01-08T14:28:05Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnOverviewPage" finished-at="2021-01-08T14:28:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductOrderSucess -->
-      </class> <!-- com.TestCases.ProductCheckOutTest -->
     </test> <!-- Mobile Automation Test on Pixel 2 -->
   </suite> <!-- Suite -->
 </testng-results>

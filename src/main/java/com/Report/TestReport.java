@@ -18,7 +18,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
         	ExtentHtmlReporter html = new ExtentHtmlReporter("Extent.html");
         	html.config().setDocumentTitle("Appium Framework");
         	html.config().setReportName("Appium Testing");
-        	html.config().setTheme(Theme.DARK);
+        	html.config().setTheme(Theme.STANDARD);
             extent = new ExtentReports();
             extent.attachReporter(html);
         }       

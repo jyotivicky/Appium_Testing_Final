@@ -33,7 +33,7 @@
 		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
 	</script>
 </head>
-	<body class='extent dark default hide-overflow '>
+	<body class='extent standard default hide-overflow '>
 		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
 			<span><i class='material-icons'>desktop_windows</i></span>
 		</div>
@@ -54,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 8, 2021 02:31:45 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 14, 2021 08:54:44 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -81,6 +81,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>Android_GooglePixel3</a></li>
 					<li><a href='#'>Android_GooglePixel2</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -122,7 +123,7 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
@@ -146,18 +147,18 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>invalidUsernameTest</span>
-						<span class='test-time'>Jan 8, 2021 02:31:45 PM</span>
+						<span class='test-time'>Jan 14, 2021 08:54:45 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:31:45 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:32:16 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+875ms</span>
+	<span class='label start-time'>Jan 14, 2021 08:54:45 AM</span>
+	<span class='label end-time'>Jan 14, 2021 08:55:22 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+314ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
-		<span class='category label'>Android_GooglePixel2</span>
+		<span class='category label'>Android_GooglePixel3</span>
 	</div>
 	<div class='author-list'>
 		<span class='author label'>JyotiprakashDas</span>
@@ -175,7 +176,7 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:32:16 PM</td>
+				<td class='timestamp'>8:55:22 AM</td>
 				<td class='step-details'>
 						User not able to login with invalid username and password
 					
@@ -183,7 +184,7 @@
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:32:16 PM</td>
+				<td class='timestamp'>8:55:22 AM</td>
 				<td class='step-details'>
 						Test Case Got Passed
 					
@@ -196,15 +197,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>invalidPasswordTest</span>
-						<span class='test-time'>Jan 8, 2021 02:32:16 PM</span>
+						<span class='test-name'>invalidUsernameTest</span>
+						<span class='test-time'>Jan 14, 2021 08:54:45 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:32:16 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:32:47 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+94ms</span>
+	<span class='label start-time'>Jan 14, 2021 08:54:45 AM</span>
+	<span class='label end-time'>Jan 14, 2021 08:55:27 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 42s+273ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -226,7 +227,7 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:32:47 PM</td>
+				<td class='timestamp'>8:55:27 AM</td>
 				<td class='step-details'>
 						User not able to login with invalid username and password
 					
@@ -234,7 +235,7 @@
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:32:47 PM</td>
+				<td class='timestamp'>8:55:27 AM</td>
 				<td class='step-details'>
 						Test Case Got Passed
 					
@@ -247,19 +248,19 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>validUsernameTest</span>
-						<span class='test-time'>Jan 8, 2021 02:32:47 PM</span>
+						<span class='test-name'>invalidPasswordTest</span>
+						<span class='test-time'>Jan 14, 2021 08:55:22 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:32:47 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:33:19 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+942ms</span>
+	<span class='label start-time'>Jan 14, 2021 08:55:22 AM</span>
+	<span class='label end-time'>Jan 14, 2021 08:55:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+184ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
-		<span class='category label'>Android_GooglePixel2</span>
+		<span class='category label'>Android_GooglePixel3</span>
 	</div>
 	<div class='author-list'>
 		<span class='author label'>JyotiprakashDas</span>
@@ -277,15 +278,15 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:33:19 PM</td>
+				<td class='timestamp'>8:55:56 AM</td>
 				<td class='step-details'>
-						User able to login with valid username and password sucessfully
+						User not able to login with invalid username and password
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:33:19 PM</td>
+				<td class='timestamp'>8:55:56 AM</td>
 				<td class='step-details'>
 						Test Case Got Passed
 					
@@ -298,15 +299,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>validateProductsOnProductPage</span>
-						<span class='test-time'>Jan 8, 2021 02:33:21 PM</span>
+						<span class='test-name'>invalidPasswordTest</span>
+						<span class='test-time'>Jan 14, 2021 08:55:27 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:33:21 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:34:11 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 49s+715ms</span>
+	<span class='label start-time'>Jan 14, 2021 08:55:27 AM</span>
+	<span class='label end-time'>Jan 14, 2021 08:56:03 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 35s+574ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -328,23 +329,15 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:33:52 PM</td>
+				<td class='timestamp'>8:56:03 AM</td>
 				<td class='step-details'>
-						Bag title showing correct
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:33:58 PM</td>
-				<td class='step-details'>
-						Bag price showing correct
+						User not able to login with invalid username and password
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:34:11 PM</td>
+				<td class='timestamp'>8:56:03 AM</td>
 				<td class='step-details'>
 						Test Case Got Passed
 					
@@ -357,19 +350,19 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>validateProductsOnProductDetailsPage</span>
-						<span class='test-time'>Jan 8, 2021 02:34:11 PM</span>
+						<span class='test-name'>validUsernameTest</span>
+						<span class='test-time'>Jan 14, 2021 08:55:56 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:34:11 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:35:18 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 7s+394ms</span>
+	<span class='label start-time'>Jan 14, 2021 08:55:56 AM</span>
+	<span class='label end-time'>Jan 14, 2021 08:56:14 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+303ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
-		<span class='category label'>Android_GooglePixel2</span>
+		<span class='category label'>Android_GooglePixel3</span>
 	</div>
 	<div class='author-list'>
 		<span class='author label'>JyotiprakashDas</span>
@@ -387,31 +380,15 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:34:50 PM</td>
+				<td class='timestamp'>8:56:14 AM</td>
 				<td class='step-details'>
-						Bag title showing correct on Products details page
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:34:59 PM</td>
-				<td class='step-details'>
-						Products description showing correct in Products description page
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:35:01 PM</td>
-				<td class='step-details'>
-						Products price showing correct on Products description page
+						User able to login with valid username and password sucessfully
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:35:18 PM</td>
+				<td class='timestamp'>8:56:14 AM</td>
 				<td class='step-details'>
 						Test Case Got Passed
 					
@@ -424,15 +401,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>validateAddToCart</span>
-						<span class='test-time'>Jan 8, 2021 02:35:20 PM</span>
+						<span class='test-name'>validUsernameTest</span>
+						<span class='test-time'>Jan 14, 2021 08:56:03 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:35:20 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:36:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 42s+313ms</span>
+	<span class='label start-time'>Jan 14, 2021 08:56:03 AM</span>
+	<span class='label end-time'>Jan 14, 2021 08:56:20 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+759ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='category-list'>
@@ -454,227 +431,15 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:35:57 PM</td>
+				<td class='timestamp'>8:56:20 AM</td>
 				<td class='step-details'>
-						Product Added Sucessfully
+						User able to login with valid username and password sucessfully
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:36:03 PM</td>
-				<td class='step-details'>
-						Test Case Got Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>validateProductOnCartPage</span>
-						<span class='test-time'>Jan 8, 2021 02:36:03 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:36:03 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:36:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+723ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>Android_GooglePixel2</span>
-	</div>
-	<div class='author-list'>
-		<span class='author label'>JyotiprakashDas</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:36:08 PM</td>
-				<td class='step-details'>
-						Added product is showing in Cart Page Correctly
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:36:14 PM</td>
-				<td class='step-details'>
-						Test Case Got Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>validateProductOnInformationPage</span>
-						<span class='test-time'>Jan 8, 2021 02:36:14 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:36:14 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:36:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+41ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>Android_GooglePixel2</span>
-	</div>
-	<div class='author-list'>
-		<span class='author label'>JyotiprakashDas</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:36:20 PM</td>
-				<td class='step-details'>
-						Added product is showing in Checkout Information Page Correctly
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:36:41 PM</td>
-				<td class='step-details'>
-						Test Case Got Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>validateProductOnOverviewPage</span>
-						<span class='test-time'>Jan 8, 2021 02:36:41 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:36:41 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:36:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+241ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>Android_GooglePixel2</span>
-	</div>
-	<div class='author-list'>
-		<span class='author label'>JyotiprakashDas</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:36:46 PM</td>
-				<td class='step-details'>
-						Added product is showing in Overview Page Correctly
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:36:54 PM</td>
-				<td class='step-details'>
-						Test Case Got Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>validateProductOrderSucess</span>
-						<span class='test-time'>Jan 8, 2021 02:36:54 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 8, 2021 02:36:54 PM</span>
-	<span class='label end-time'>Jan 8, 2021 02:37:06 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+88ms</span>
-</div>
-<div class='test-attributes'>
-	<div class='category-list'>
-		<span class='category label'>Android_GooglePixel2</span>
-	</div>
-	<div class='author-list'>
-		<span class='author label'>JyotiprakashDas</span>
-	</div>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:37:00 PM</td>
-				<td class='step-details'>
-						User able to order a product sucessfully
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>2:37:06 PM</td>
-				<td class='step-details'>
-						User able to order a product sucessfully
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:37:06 PM</td>
+				<td class='timestamp'>8:56:20 AM</td>
 				<td class='step-details'>
 						Test Case Got Passed
 					
@@ -725,14 +490,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>Android_GooglePixel2</span>
+						<span class='category-name'>Android_GooglePixel3</span>
 						<span class='category-status right'>
-						<span class='label pass'>10</span>
+						<span class='label pass'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							
 							
 						</div>
@@ -747,53 +512,61 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 8, 2021 02:31:45 PM</td>
+										<td>Jan 14, 2021 08:54:45 AM</td>
 										<td class='linked' test-id='1'>invalidUsernameTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:32:16 PM</td>
-										<td class='linked' test-id='2'>invalidPasswordTest</td>
+										<td>Jan 14, 2021 08:55:22 AM</td>
+										<td class='linked' test-id='3'>invalidPasswordTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:32:47 PM</td>
-										<td class='linked' test-id='3'>validUsernameTest</td>
+										<td>Jan 14, 2021 08:55:56 AM</td>
+										<td class='linked' test-id='5'>validUsernameTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Android_GooglePixel2</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 14, 2021 08:54:45 AM</td>
+										<td class='linked' test-id='2'>invalidUsernameTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:33:21 PM</td>
-										<td class='linked' test-id='4'>validateProductsOnProductPage</td>
+										<td>Jan 14, 2021 08:55:27 AM</td>
+										<td class='linked' test-id='4'>invalidPasswordTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:34:11 PM</td>
-										<td class='linked' test-id='5'>validateProductsOnProductDetailsPage</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:35:20 PM</td>
-										<td class='linked' test-id='6'>validateAddToCart</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:36:03 PM</td>
-										<td class='linked' test-id='7'>validateProductOnCartPage</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:36:14 PM</td>
-										<td class='linked' test-id='8'>validateProductOnInformationPage</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:36:41 PM</td>
-										<td class='linked' test-id='9'>validateProductOnOverviewPage</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:36:54 PM</td>
-										<td class='linked' test-id='10'>validateProductOrderSucess</td>
+										<td>Jan 14, 2021 08:56:03 AM</td>
+										<td class='linked' test-id='6'>validUsernameTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -832,12 +605,12 @@
 					<div class='author-heading'>
 						<span class='author-name'>JyotiprakashDas</span>
 						<span class='author-status right'>
-						<span class='label pass'>10</span>
+						<span class='label pass'>6</span>
 						</span>
 					</div>
 					<div class='author-content hide'>
 						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 10</span>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
 							
 							
 						</div>
@@ -852,53 +625,33 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 8, 2021 02:31:45 PM</td>
+										<td>Jan 14, 2021 08:54:45 AM</td>
 										<td class='linked' test-id='1'>invalidUsernameTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:32:16 PM</td>
-										<td class='linked' test-id='2'>invalidPasswordTest</td>
+										<td>Jan 14, 2021 08:54:45 AM</td>
+										<td class='linked' test-id='2'>invalidUsernameTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:32:47 PM</td>
-										<td class='linked' test-id='3'>validUsernameTest</td>
+										<td>Jan 14, 2021 08:55:22 AM</td>
+										<td class='linked' test-id='3'>invalidPasswordTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:33:21 PM</td>
-										<td class='linked' test-id='4'>validateProductsOnProductPage</td>
+										<td>Jan 14, 2021 08:55:27 AM</td>
+										<td class='linked' test-id='4'>invalidPasswordTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:34:11 PM</td>
-										<td class='linked' test-id='5'>validateProductsOnProductDetailsPage</td>
+										<td>Jan 14, 2021 08:55:56 AM</td>
+										<td class='linked' test-id='5'>validUsernameTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 8, 2021 02:35:20 PM</td>
-										<td class='linked' test-id='6'>validateAddToCart</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:36:03 PM</td>
-										<td class='linked' test-id='7'>validateProductOnCartPage</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:36:14 PM</td>
-										<td class='linked' test-id='8'>validateProductOnInformationPage</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:36:41 PM</td>
-										<td class='linked' test-id='9'>validateProductOnOverviewPage</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 8, 2021 02:36:54 PM</td>
-										<td class='linked' test-id='10'>validateProductOrderSucess</td>
+										<td>Jan 14, 2021 08:56:03 AM</td>
+										<td class='linked' test-id='6'>validUsernameTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -923,7 +676,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -935,19 +688,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 8, 2021 02:31:45 PM</div>
+					<div class='panel-lead'>Jan 14, 2021 08:54:44 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 8, 2021 02:37:07 PM</div>
+			 		<div class='panel-lead'>Jan 14, 2021 08:56:21 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 5m 21s+970ms</div>
+					<div class='panel-lead'>0h 1m 36s+451ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -963,8 +716,17 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
+							<td>Android_GooglePixel3</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
 							<td>Android_GooglePixel2</td>
-							<td>10</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -982,8 +744,8 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 10,
-				passParent: 10,
+                parentCount: 6,
+				passParent: 6,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -1014,7 +776,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "invalidUsernameTest":30.875,"invalidPasswordTest":31.094,"validUsernameTest":31.942,"validateProductsOnProductPage":49.715,"validateProductsOnProductDetailsPage":67.394,"validateAddToCart":42.313,"validateProductOnCartPage":11.723,"validateProductOnInformationPage":26.041,"validateProductOnOverviewPage":13.241,"validateProductOrderSucess":12.088
+			        "invalidUsernameTest":37.314,"invalidUsernameTest":42.273,"invalidPasswordTest":34.184,"invalidPasswordTest":35.574,"validUsernameTest":17.303,"validUsernameTest":17.759
 			};
 		</script>
 	
